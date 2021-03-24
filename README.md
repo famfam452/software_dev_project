@@ -10,6 +10,8 @@
     - Information
     - Course Available
 - Curriculum 
+    - Information
+    - List Subjects
 - Faculty
   - Information 
 - Major 
@@ -48,7 +50,7 @@
     } 
 ### Response:  
     { 
-        Subjects:[
+        "subjects":[
             ...
             {
                 "year":"4",
@@ -70,7 +72,7 @@
     } 
 ### Response:  
     { 
-        Subjects:[
+        "subjects":[
             ...
             {
                 "year":"4",
@@ -102,6 +104,25 @@
         "Type":"Credit", 
         "Prerequisite":"None" 
     } 
+## Course Available
+### ENDPOINT       
+    GET /course/available/{Student_ID} 
+### Prerequisite 
+  - None 
+### Request :  
+    { 
+        " Student_ID ": "60010105", 
+    } 
+### Response:  
+    { 
+        "subjects":[
+            {
+                "year":"4",
+                "semester:"2",
+                "subjects:[]
+            }
+        ]
+    }
 # Curriculum (หลักสูตร) 
 ## Information
 ### ENDPOINT       
@@ -160,7 +181,20 @@
                 "free":"6" 
             } 
         }, 
-        "List_of_subjects": [ 
+        
+    } 
+## List Subjects
+### ENDPOINT       
+    GET : /curriculum/subjects/{Curriculum_ID}/ 
+### Prerequisite 
+  - None 
+### Request :  
+    { 
+        "Curriculum_ID": "25600291", 
+    } 
+### Response:
+    {
+        "subjects": [ 
             { 
                 "years":"1", 
                 "semester": "1", 
@@ -169,11 +203,13 @@
                         "id": "01006030", 
                         "title": "Cal", 
                         "credit": "(3-0-6)" 
-                    } 
+                    },
+                    ...
                 ] 
             }, 
+            ....
         ] 
-    } 
+    }
 # Faculty   
 ## Information
 ### ENDPOINT       
