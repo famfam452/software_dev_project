@@ -1,0 +1,13 @@
+title หน่วยกิตและวิชาที่เหลือ
+
+
+User->MAIN PAGE:Select Check Credit
+MAIN PAGE->Server:UserID
+Server->DATABASE:Request User FacultyID,MajorID,Student Year,Enrolled subjects
+DATABASE-->Server:Return FacultyID,MajorID,Student Year
+Server->DATABASE:Request Curriculum by FacultyID,MajorID,Student Year
+DATABASE-->Server:Return Subjects in Curriculum
+Server->DATABASE:Request Subjects in Curriculum in GenED
+DATABASE-->Server:Response Subjects
+Server-->MAIN PAGE:MAP Enrolled subjects and Subjects
+MAIN PAGE-->User:Show Unenroll subjects

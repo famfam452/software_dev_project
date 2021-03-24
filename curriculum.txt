@@ -1,0 +1,11 @@
+title ดูหลักสูตร
+
+
+User->MAIN PAGE:Select Curriculum
+MAIN PAGE->Server:UserID
+Server->DATABASE:Request User FacultyID,MajorID,Student Year
+DATABASE-->Server:Return FacultyID,MajorID,Student Year
+Server->DATABASE:Request Curriculum by FacultyID,MajorID,Student Year
+DATABASE-->Server:Return Subjects in Curriculum
+Server-->MAIN PAGE:Response Subjects Data
+MAIN PAGE-->User:Show Data

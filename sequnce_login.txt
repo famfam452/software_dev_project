@@ -1,0 +1,9 @@
+title Login
+
+
+User->LOGIN PAGE:Input Username & Password
+LOGIN PAGE->Server:Username & Password
+Server->KMITL API:Request Authorization
+KMITL API-->Server:Response Token Autorization
+Server-->LOGIN PAGE:User Token
+LOGIN PAGE-->User:Login Success
