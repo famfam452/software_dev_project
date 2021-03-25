@@ -242,9 +242,28 @@
     } 
 
  
-
- 
-
+# Credit Checking (ดูจำนวนหน่วยกิตที่เหลือ)
+## Information
+### ENDPOINT
+    GET : 
+### Prerequisite 
+### Request :  
+### Response:  
+    {
+        "Credit":{
+            "Curriculum_credit":"138",
+            "Presemester_credit":"120",
+            "Registed_credit":"7",
+            "Target_credit":"127",
+            "Needed_credit":"11"
+        },
+        "structure":{ 
+            "specific":{ 
+                "กลุ่มวิชาเลือกเฉพาะสาขา":"3" 
+            }, 
+            "free":"6" 
+        } 
+    }
  
 
  
