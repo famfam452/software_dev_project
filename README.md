@@ -293,13 +293,16 @@ https://shielded-brook-09988.herokuapp.com/api/
   - None
 ### Response :
 [
+
     {
+    
         "code_id": "01006004",
         "title_th": "การฝึกงานอุตสาหกรรม",
         "title_en": "INDUSTRIAL TRAINING",
         "credit": 0,
         "credit_struct": "(0-45-0)",
-        "description_th": "เป็นการฝึกงานภาคปฎิบัติที่จัดขึ้นตามสาขาวิชา โดยการฝึกงานในโรงงานอุตสาหกรรม หรือ บริษัทเอกชน ทั้งในประเทศและต่างประเทศ ทั้งนี้เพื่อเป็นการเสริมสร้างประสบการณ์นักศึกษาทุกคน จะต้องผ่านการฝึกงานในช่วงของการศึกษาฤดูร้อน พร้อมทั้งเขียนรายงานเสนอ",
+        "description_th": "เป็นการฝึกงานภาคปฎิบัติที่จัดขึ้นตามสาขาวิชา โดยการฝึกงานในโรงงานอุตสาหกรรม หรือ บริษัทเอกชน ทั้งในประเทศและต่างประเทศ ทั้งนี้เพื่อเป็นการเสริมสร้างประสบการณ์นักศึกษาทุกคน 
+        จะต้องผ่านการฝึกงานในช่วงของการศึกษาฤดูร้อน พร้อมทั้งเขียนรายงานเสนอ",
         "description_en": "During their four-year selected studies, students are required to complete a short term industrial placement within professional selected environments. It takes place during a summer period. This course allows students to put into practice under conditions reflecting their future activities and reponsesibilities. The work, carried out under the responsibility of the firm involved, is presented in a written report.",
         "type": "Credit",
         "category_ID": 2,
@@ -352,7 +355,9 @@ https://shielded-brook-09988.herokuapp.com/api/
         "prerequisite": "01006030 CALCULUS 1",
         "prerequisite_ID": 1006030,
         "id": 1006031
+        
     }
+    
 ]
 
 # Curriculum
@@ -365,7 +370,9 @@ https://shielded-brook-09988.herokuapp.com/api/
   - None
 ### Response :
 [
+
     {
+    
         "code_id": "25520161105552",
         "title_thai": "หลักสูตรวิศวกรรมศาสตรบัณฑิต สาขาวิศวกรรมสารสนเทศ",
         "title_eng": "Bachelor of Engineering Program in Information Engineering",
@@ -384,7 +391,9 @@ https://shielded-brook-09988.herokuapp.com/api/
         "id": 25520161105552,
         "mou": "หลักสูตรวสถาบันโดยเฉพาะ"
     }
+    
 ]
+
 
 ## Get a  Curriculum
 ### END POINT
@@ -396,7 +405,9 @@ https://shielded-brook-09988.herokuapp.com/api/
     "id": 25520161105552
 }
 ### Response :
+
 {
+
     "code_id": "25520161105552",
     "title_thai": "หลักสูตรวิศวกรรมศาสตรบัณฑิต สาขาวิศวกรรมสารสนเทศ",
     "title_eng": "Bachelor of Engineering Program in Information Engineering",
@@ -414,6 +425,7 @@ https://shielded-brook-09988.herokuapp.com/api/
     "program_out_condition": "ให้ปริญญาเพียงสาขาวิชาเดียว",
     "id": 25520161105552,
     "mou": "หลักสูตรวสถาบันโดยเฉพาะ"
+    
 }
 
 ## Get a Information of Curriculum
@@ -426,7 +438,9 @@ https://shielded-brook-09988.herokuapp.com/api/
     "id": 25520161105552
 }
 ### Response :
+
 {
+
     "Faculty_ID": 1,
     "Structure_Curriculum": {
         "total_credit": 138,
@@ -472,7 +486,9 @@ https://shielded-brook-09988.herokuapp.com/api/
             "eng": "B.Eng (Information Engineering)"
         }
     }
+    
 }
+
 
 # CourseOfCurriculum
 ## Get All CoursesOfCurriculum
@@ -483,7 +499,9 @@ https://shielded-brook-09988.herokuapp.com/api/
 ### Request :
   - None
 ### Response :
+
 [
+
     {
         "recommend_semester": "3/3",
         "minimum_year": 3,
@@ -505,6 +523,7 @@ https://shielded-brook-09988.herokuapp.com/api/
         "course_id": 1006030,
         "curriculum_id": 25520161105552
     }
+    
 ]
 
 
@@ -517,12 +536,15 @@ https://shielded-brook-09988.herokuapp.com/api/
 ### Request :
   - None
 ### Response :
+
 [
+
     {
         "title": "วิศวกรรมคอมพิวเตอร์",
         "faculty_ID": 1,
         "id": 1
     }
+    
 ]
 
 
@@ -536,10 +558,12 @@ https://shielded-brook-09988.herokuapp.com/api/
   - None
 ### Response :
 [
+
     {
         "title": "วิศวกรรมศาสตร์",
         "id": 1
     }
+    
 ]
 
 
@@ -553,6 +577,7 @@ https://shielded-brook-09988.herokuapp.com/api/
   - None
 ### Response :
 [
+
     {
         "title": "กลุ่มวิชาคุณค่าแห่งชีวิต",
         "category_ID": 1,
@@ -608,6 +633,7 @@ https://shielded-brook-09988.herokuapp.com/api/
         "category_ID": 3,
         "id": 11
     }
+    
 ]
 
 
@@ -620,7 +646,9 @@ https://shielded-brook-09988.herokuapp.com/api/
 ### Request :
   - None
 ### Response :
+
 [
+
     {
         "title": "หมวดวิชาศึกษาทั่วไป",
         "id": 1
@@ -633,6 +661,7 @@ https://shielded-brook-09988.herokuapp.com/api/
         "title": "หมวดวิชาเลือกเสรี",
         "id": 3
     }
+    
 ]
 
 
@@ -645,7 +674,9 @@ https://shielded-brook-09988.herokuapp.com/api/
 ### Request :
   - None
 ### Response : 
+
 [
+
     {
         "category_ID": 1,
         "c_group_ID": 1,
@@ -723,4 +754,5 @@ https://shielded-brook-09988.herokuapp.com/api/
         "curriculum_ID": 25520161105552,
         "id": "51aef98d-a315-41de-978b-cd5b86d4667e"
     }
+    
 ]
