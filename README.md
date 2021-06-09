@@ -192,6 +192,7 @@
 ### Request :  
     { 
         "Curriculum_ID": "25600291", 
+        "ok": "23123123"
     } 
 ### Response:
     {
@@ -201,7 +202,7 @@
                 "semester": "1", 
                 "subjects": [ 
                     { 
-                        "id": "01006030", 
+                        "id": "0100603023", 
                         "title": "Cal", 
                         "credit": "(3-0-6)" 
                     },
